@@ -31,23 +31,23 @@ abbrlink: things-should-be-donw-when-change-into-new-ubuntu
     ```
     curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     ```
-- 将[plug.vim](git@github.com:ONGOING-Z/dotfiles.git)下载下来后移入`~/.vim/autoload`文件夹下即可使用。
-
-使用自己的[.vimrc](git@github.com:ONGOING-Z/dotfiles.git)
+- 将[plug.vim](https://github.com/ONGOING-Z/dotfiles)下载下来后移入`~/.vim/autoload`文件夹下即可使用。
+**注**: 使用vim-plug必须先安装git，不然不能使用!
+使用自己的[.vimrc](https://github.com/ONGOING-Z/dotfiles)
 
 ## Install tmux
 
 ```
 sudo apt install tmux
 ```
-使用自己的[.tmux.conf](git@github.com:ONGOING-Z/dotfiles.git)
+使用自己的[.tmux.conf](https://github.com/ONGOING-Z/dotfiles)
 
 ## Git
 
 ```
 sudo apt install git
 ```
-## Install googlepinyin[^1]
+## Install googlepinyin
 
 在`text entry setting`可以设置，可能出现安装之后重新启动又得再次选择输入法的情况．
 - 在命令行中输入`fcitx`，检查其是否已经安装，如果未安装，执行`sudo apt install fcitx`进行安装。
@@ -178,11 +178,12 @@ sudo apt-get install  indicator-multiload
 
 ## 安装命令行打字软件gtypist
 
-之前一直是在[typing.com](typing.com)上来进行训练的，之后在一个帖子中突然发现了下方这个命令行软件，这里记录一下。
+之前一直是在[typing.com](https://typing.com)上来进行训练的，之后在一个帖子中突然发现了下方这个命令行软件，这里记录一下。
 
 `gtypist`是一款GNU开源软件，可以用来训练自己的打字效率。
 使用`sudo apt install gtypist`即可在ubuntu上进行安装。
 
 但是我并未在gtypist中发现记录历史的功能，也就是说每次打开都得重新开始玩。
 
-[^1]: [Ubuntu18.04安装googlepinyin](https://www.jianshu.com/p/180cd9634b4a)
+## 参考
+[1] [Ubuntu18.04安装googlepinyin](https://www.jianshu.com/p/180cd9634b4a)

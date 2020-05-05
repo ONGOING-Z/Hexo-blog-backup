@@ -60,7 +60,7 @@ sudo mkfontscale && sudo mkfontdir && sudo fc-cache -fv
 ![Editing_Profile_Default_004](Install-Yahei-Consolas-Hybrid-font-in-linux-mint/Editing_Profile_Default_004.png)
 
 
-## 全部参考文档
+### 全部参考文档
 [1] [怎样修改终端字体](https://forum.ubuntu.org.cn/viewtopic.php?p=1312510)
 [2] [Consolas雅黑混合版yahei consolas hybrid编程字体下载](https://www.linuxidc.com/Linux/2011-08/40747.htm)
 [3] [下载yahei consolas hybrid字体](https://linux.linuxidc.com/linuxconf/download.php?file=Li9saW51eGZpbGVzL3B1Yi9PdGhlci/X1szlL0NvbnNvbGFz0cW62rvsus+w5nlhaGVpIGNvbnNvbGFzIGh5YnJpZLHgs8zX1szlz8LU2C8lNUJMaW51eElEQy5jb20lNURZYUhlaS5Db25zb2xhcy4xLjExYi5yYXI=)
