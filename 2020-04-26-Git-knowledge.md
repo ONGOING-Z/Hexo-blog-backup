@@ -131,3 +131,14 @@ git config --global credential.helper store
 git config --global core.quotepath false
 ```
 
+### 重写最后一个commit信息
+
+```
+git commit --amend
+```
+
+### 恢复git rm的文件
+
+第一步: `git reset`
+第二步: `git checkout the_file_deleted`
+
