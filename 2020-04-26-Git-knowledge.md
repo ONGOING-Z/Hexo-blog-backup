@@ -142,3 +142,8 @@ git commit --amend
 第一步: `git reset`
 第二步: `git checkout the_file_deleted`
 
+### 下载最新版本库，不带有历史库
+
+```
+git clone repository_link --depth=1
+```

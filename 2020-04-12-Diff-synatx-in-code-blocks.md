@@ -1,6 +1,7 @@
 ---
 layout: '[layout]'
 title: Diff-synatx-in-code-blocks
+copyright: true
 date: 2020-04-12 13:23:32
 tags:
     - Markdown
