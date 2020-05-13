@@ -102,7 +102,7 @@ w
     `esc + f`: 右移一个单词
     `esc + b`: 左移一个单词
 
-13. Linux mv
+13. Linux `mv`
     功能
     (1) 修改名称
     (2) 移动文件
@@ -121,12 +121,12 @@ w
     (2)youtube_dl
 
 17. du(disk usage)
-18. ctrl + u: 从光标处删除文本直到行首
-19. ctrl + k: 从光标处删除文本直到行尾
-20. alt + f: 向后一个单词
-21. alt + b: 向前一个单词
+18. `ctrl + u`: 从光标处删除文本直到行首
+19. `ctrl + k`: 从光标处删除文本直到行尾
+20. `alt + f`: 向后一个单词
+21. `alt + b`: 向前一个单词
 22. 重复使用上一个命令: `!!`
-23. dstat
+23. `dstat`
     View the net speed in late 10 seconds and other functions.
 24. Symbolic links
 
@@ -141,26 +141,22 @@ w
     chmod a+w file.txt
     ```
 
-27. command - uptime
-
+27. `uptime`
     Tell how long the system has been running.
 
 28. Change user
-
     ```
     su [username]
     ```
     退出此用户: `exit`
 
 29. Add user
-
     ```bash
     useradd [username]
     passwd [username]
     ```
 
 30. Delete user
-
     ```bash
     userdel [-r] [username]
     ```
@@ -194,11 +190,67 @@ w
     sudo dpkg-reconfigure keyboard-configuration
     ```
 33. cp 排除某个目录
-
-    eg. 有目录b, c, 复制到/f下，排除b
-    ```
+    例. 有目录b, c, 复制到`/f`下，排除b
+    ```bash
     cp -r !(b) /f
     ```
+34. 在linux下弹出u盘命令（假设u盘设备是sdb1）
+
+  ```bash
+  sudo eject -s /dev/sdb1
+  ```
+
+35. ccat
+
+  内置的`cat`查看命令没有语法高亮，但是使用`ccat`可以有这个作用。
+  
+  下载二进制代码文件
+  ```bash
+  wget https://github.com/jingweno/ccat/releases/download/v1.1.0/linux-amd64-1.1.0.tar.gz
+  ```
+  解压
+  ```bash
+  tar xfz linux-amd64-1.1.0.tar.gz
+  ```
+  将`ccat`文件复制到`/usr/local/bin/`文件夹下
+  ```bash
+  cp linux-amd64-1.1.0/ccat /usr/local/bin/
+  ```
+  使用`ccat`命令查看文件会发现文件显示变成彩色的了。
+
+36. ssh & public key
+
+  (1) 本地生成公钥
+  ```
+  ssh-keygen -t rsa
+  ```
+  之后全部默认回车即可。
+  
+  (2) 将本地公钥`~/.ssh/id_rsa.pub`复制到远程主机`~/.ssh/autoorized_keys`文件中，如果目录和文件皆不存在，直接创建新的文件。
+  (3) 重启ssh服务
+  ```
+  service ssh restart
+  ```
+  之后与主机相连就不必再输入密码。
+  
+37. `ls`的`-S`选项
+  > sort  by  WORD instead of name: none (-U), size (-S), time (-t), version (-v), extension (-X)
+
+  准确来说就是将文件从大到小进行排序。
+
+38. `tab`
+
+  (1) 命令补全: tab接在一串指令的第一个字的后面
+  (2) 文件补齐: tab接在一串指令的第二个字的后面
+
+39. `find`
+
+  ```bash
+  $ find dir_name -name filename_to_be_searched
+  ```
+40. 在 bash 里，使用 `Ctrl-R` 而不是上下光标键来查找历史命令。
+41. 使用 `man ascii` 来查看 ASCII 表。
+42. 命令行注释命令: `alt + #`
 
 ----
 
